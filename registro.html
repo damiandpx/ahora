@@ -1,0 +1,44 @@
+<html>
+<head>
+<style>
+h1 {
+    color: green;
+    font-family: verdana;
+    font-size: 300%;
+
+}
+p  {
+    color: red;
+    font-family: courier;
+    font-size: 160%;
+}
+</style>
+<title>Tesi</title>
+<center><h1> Estacionamiento Escolar </h1></center><br>
+<center>
+<img src="tesi.png" height=""></center><br><br>
+</head>
+<body bgcolor=#EFFBEF><center>
+
+<form method="post" action="ejecuta_reportes.php">
+<table  class="flat-table" border=0 width="95%">
+<tr>
+<td>
+<strong>Seleccione fecha de inicio</strong><br><br>
+<strong>Seleccione fecha final</strong><br>
+</td>
+<td>
+<input type="date" name="fechai" step="1" min="2016-06-01" max="2016-06-31" value="<?php echo date("Y-m-d");?>"><br><br>
+<input type="date" name="fechaf" step="1" min="2016-06-01" max="2016-06-31" value="<?php echo date("Y-m-d");?>"><br>
+
+   </td>
+</tr>
+
+
+</table><br>
+<input type="submit" value="Enviar" name="submit">
+</form>
+
+</center>
+</body>
+</html>
